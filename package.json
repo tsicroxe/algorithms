@@ -1,0 +1,14 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "My algorithm playground! Decided to do some interview prep and refresh myself on some data structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "abanakus",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
