@@ -30,3 +30,13 @@ test('Front of queue should now return 10', () => {
     expect(queue.front()).toEqual(10);
 });
 
+test('Make sure that dequeueing more than possible does not break queue', () => {
+    queue.dequeue();
+    queue.dequeue();
+    queue.dequeue();
+    // queue.dequeue();
+    // queue.dequeue();
+    // queue.dequeue();
+
+    expect(queue.front()).toEqual([]);
+})
