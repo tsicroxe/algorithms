@@ -1,4 +1,4 @@
-const { BinarySearchTree, Node } = require('../js/binarySearchTree');
+const { BinarySearchTree, Node } = require('../js/BinarySearchTree');
 
 let bst = new BinarySearchTree;
 bst.insert(5);
