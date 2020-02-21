@@ -34,9 +34,9 @@ test('Make sure that dequeueing more than possible does not break queue', () => 
     queue.dequeue();
     queue.dequeue();
     queue.dequeue();
-    // queue.dequeue();
-    // queue.dequeue();
-    // queue.dequeue();
+    queue.dequeue();
+    queue.dequeue();
+    queue.dequeue();
 
-    expect(queue.front()).toEqual([]);
+    expect(queue.front()).toEqual('Queue is Empty');
 })

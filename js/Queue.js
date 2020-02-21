@@ -4,10 +4,7 @@ class Queue {
     }
 
     isEmpty() {
-        if (this.items.length > 0) {
-            return false;
-        }
-        return true;
+        return this.items.length == 0;
     }
 
     enqueue(item) {
@@ -18,14 +15,20 @@ class Queue {
         if (this.isEmpty()) {
             return 'Queue is Empty';
         }
-        this.items.shift();
+        return this.items.shift();
     }
 
     front() {
+        if(this.isEmpty()) {
+            return 'Queue is Empty';
+        }
         return this.items[0];
     }
 
     fullQueue() {
+        if(this.isEmpty()){
+            return 'Queue is empty';
+        }
         return this.items;
     }
 
